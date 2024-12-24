@@ -7,9 +7,10 @@ on:
   pull_request:
     branches:
       - main
-environment: CloudRun
+
 jobs:
   build:
+    environment: CloudRun
     name: Build and Push Docker Image to Docker Hub
     runs-on: ubuntu-latest
     
